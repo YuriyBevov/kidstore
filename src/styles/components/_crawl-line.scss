@@ -1,0 +1,10 @@
+.crawl-line {
+  @extend .flex-centered-content;
+
+  font-size: 18px;
+  line-height: 21px;
+  padding: 10px 0;
+
+  color: var(--white-color);
+  background: linear-gradient(265.07deg, #1862FF 4.96%, #00D2FF 112.8%), #F4F4F4;
+}

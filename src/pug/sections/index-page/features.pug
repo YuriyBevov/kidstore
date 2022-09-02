@@ -1,0 +1,19 @@
+include ../../mixins/main-btn
+include ../../content/index-page/features
+
+section.features
+  .container.features__container
+    h2.features__title Преимущества
+    p.lw-text-alternative Почему клиенты выбирают нас
+    ul.features__list
+      each item in featuresListContent
+        li.features__list-item
+          .features__list-item-wrapper
+            svg(width="90" height="90")
+              use(xlink:href=`./assets/sprite.svg#icon-${item.icon}`)
+
+          p!= item.text
+
+    +main-btn('link', 'Подробнее', 'about.html', 'features__btn')
+
+

@@ -1,0 +1,40 @@
+.main-nav {
+  @extend .flex-wrap;
+  align-items: center;
+  flex-grow: 1;
+
+  &__logo {
+    svg {
+      fill: var(--blue-1);
+    }
+
+    margin-right: 50px;
+  }
+
+  &__list {
+    @extend .flex-wrap;
+    align-items: center;
+    flex-grow: 1;
+
+    padding: 0 20px;
+  }
+
+  &__list-item {
+    margin-right: 32px;
+    a {
+      @extend .flex-centered-content;
+      font-size: 18px;
+      line-height: 21px;
+      color: var(--main-nav-link-color);
+
+      transition: color var(--main-transition);
+
+      @include m-b-laptop-up {
+        &:hover,
+        &:focus {
+          color: var(--main-nav-link-focus-color);
+        }
+      }
+    }
+  }
+}

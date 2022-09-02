@@ -1,0 +1,7 @@
+.main-header {
+  padding: 16px 0;
+  &__container {
+    @extend .flex-wrap;
+    align-items: center;
+  }
+}

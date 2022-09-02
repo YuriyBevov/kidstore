@@ -1,0 +1,6 @@
+mixin main-btn(type, title, url, cls)
+  if type === 'button'
+    button(type="button" class= cls ? cls : null).main-btn= title
+
+  if type === 'link'
+    a(href= url class= cls ? cls : null).main-btn-link= title

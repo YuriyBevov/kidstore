@@ -1,0 +1,11 @@
+include ../content/common/catalog-nav
+
+nav.catalog-nav
+  .container.catalog-nav__container
+    ul.catalog-nav__list
+      each item in catalogNavContent
+        li.catalog-nav__list-item
+          a(href= item.url)= item.title
+
+    .catalog-nav__search
+      include ./search

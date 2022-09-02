@@ -1,0 +1,107 @@
+.features {
+  position: relative;
+  margin-top: 117px;
+  margin-bottom: 172px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+
+  background-color: var(--features-section-bg);
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    top: -117px;
+    height: 117px;
+    background-image: url("../assets/img/features-section-wave-top.svg");
+  }
+
+  &::after {
+    bottom: -72px;
+    height: 72px;
+    background-image: url("../assets/img/features-section-wave-bottom.svg");
+  }
+
+  &__container {
+    @extend .flex-column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 45px;
+  }
+
+  &__btn {
+    min-width: 232px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    margin-bottom: 60px;
+  }
+
+  &__list-item {
+    @extend .flex-column;
+    align-items: center;
+    padding: 50px 20px 30px;
+    box-shadow: none;
+    border-radius: 24px;
+    background-color: transparent; //var(--main-bg-color);
+    transition: box-shadow var(--main-transition), background-color var(--main-transition);
+
+    p {
+      font-size: 18px;
+      line-height: 27px;
+
+      text-align: center;
+    }
+
+    &-wrapper {
+      @extend .flex-centered-content;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 30px;
+      border-radius: 24px;
+
+      background-color: var(--features-list-item-wrapper-bg);
+
+      transition: background-color var(--main-transition);
+
+      svg {
+        fill: var(--features-list-item-icon-color);
+      }
+    }
+
+    @include m-b-laptop-up {
+      &:hover,
+      &:focus {
+        box-shadow: 0px 125px 50px rgba(28, 124, 227, 0.01), 0px 71px 42px rgba(28, 124, 227, 0.05), 0px 31px 31px rgba(28, 124, 227, 0.09), 0px 8px 17px rgba(28, 124, 227, 0.1), 0px 0px 0px rgba(28, 124, 227, 0.1);
+        background-color: var(--main-bg-color);
+
+        .features__list-item-wrapper {
+          background-color: var(--features-list-item-wrapper-focus-bg);
+        }
+      }
+    }
+  }
+}

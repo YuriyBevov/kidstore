@@ -1,0 +1,27 @@
+.user {
+  @extend .flex-wrap;
+  align-items: center;
+  margin-left: auto;
+
+  a {
+    @extend .flex-wrap;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 21px;
+
+    color: var(--main-color);
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    svg {
+      fill: none;
+      stroke: var(--user-svg-color);
+      stroke-width: 2px;
+
+      margin-right: 8px;
+    }
+  }
+}

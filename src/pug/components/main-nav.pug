@@ -1,0 +1,10 @@
+include ../content/common/main-nav
+
+nav.main-nav
+  a(href="index.html" aria-label="На главную").main-nav__logo
+    svg(width="173" height="55")
+      use(xlink:href="./assets/sprite.svg#icon-logo-mock")
+  ul.main-nav__list
+    each item in navListContent
+      li.main-nav__list-item
+        a(href= item.url)= item.title
