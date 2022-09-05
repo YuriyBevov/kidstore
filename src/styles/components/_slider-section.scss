@@ -1,0 +1,15 @@
+.slider-section {
+  padding: 20px 0;
+  margin-bottom: 40px;
+
+  &__title {
+    font-family: var(--accent-font-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    color: var(--main-color);
+  }
+}

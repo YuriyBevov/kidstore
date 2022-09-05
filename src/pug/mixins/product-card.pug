@@ -1,0 +1,27 @@
+include ./card-badge
+include ../mixins/main-btn
+
+mixin product-card(product)
+  .product-card
+    .product-card__header
+      img(src= `./assets/img/${product.img}@1x.png` alt= product.title width="290" height="285")
+
+      if product.badges.length
+        .product-card__header-badges
+          each badge in product.badges
+            +card-badge(badge.type, badge.title)
+
+      button(type="button" aria-label="Добавить в избранное").js-add-favourite
+        svg(width="24" height="24")
+          use(xlink:href="./assets/sprite.svg#icon-heart")
+
+    .product-card__body
+      h2!= product.title
+      span= `${product.price} руб.`
+
+      a(href="#") Характеристики
+      a(href="product.html") Подробно
+
+    .product-card__footer
+      +main-btn('button', 'В корзину', null, 'main-btn--blue')
+      +main-btn('button', 'Купить сейчас')

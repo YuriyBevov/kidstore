@@ -1,12 +1,9 @@
-.main-btn {
-  @extend .button-default;
-
-
-}
-
 .main-btn-link {
   @extend .flex-centered-content;
 
+
+  font-family: var(--accent-font-family);
+  font-weight: 700;
   width: fit-content;
   height: fit-content;
   min-height: 40px;
@@ -17,4 +14,13 @@
 
   color: var(--main-btn-link-color);
   background: linear-gradient(265.07deg, #00B68A 4.96%, #35E6BB 112.8%), linear-gradient(265.07deg, #1862FF 4.96%, #00D2FF 112.8%);
+}
+
+.main-btn {
+  @extend .button-default;
+  @extend .main-btn-link;
+
+  &--blue {
+    background: linear-gradient(265.07deg, #1862FF 4.96%, #00D2FF 112.8%);
+  }
 }

@@ -1,0 +1,29 @@
+.badge {
+  @extend .flex-centered-content;
+
+  width: 55px;
+  height: 55px;
+
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+
+  span {
+    font-weight: 700;
+    font-size: 16;
+    line-height: 20px;
+
+    color: var(--white-color);
+  }
+
+  &--blue {
+    background-color: var(--badge-blue-color);
+  }
+
+  &--green {
+    background-color: var(--badge-green-color);
+  }
+
+  &:not(:first-child) {
+    margin-top: -10px;
+  }
+}

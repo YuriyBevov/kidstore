@@ -1,0 +1,3 @@
+mixin card-badge(type, title)
+  .badge(class = `${type === 'sale' ? 'badge--blue' : type === 'new' ? 'badge--green' : null}`)
+    span!= title

@@ -6,13 +6,13 @@ section.features
     h2.features__title Преимущества
     p.lw-text-alternative Почему клиенты выбирают нас
     ul.features__list
-      each item in featuresListContent
+      each feature in featuresListContent
         li.features__list-item
           .features__list-item-wrapper
             svg(width="90" height="90")
-              use(xlink:href=`./assets/sprite.svg#icon-${item.icon}`)
+              use(xlink:href=`./assets/sprite.svg#icon-${feature.icon}`)
 
-          p!= item.text
+          p!= feature.text
 
     +main-btn('link', 'Подробнее', 'about.html', 'features__btn')
 

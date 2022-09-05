@@ -1,0 +1,17 @@
+include ../content/catalog/products
+include ../mixins/product-card
+
+.main-slider-container
+  .swiper.main-slider
+    .swiper-wrapper
+      each product in productListContent
+        .swiper-slide
+          +product-card(product)
+
+  .swiper-button-next.main-slider-button-next
+    svg(width="10" height="20")
+      use(xlink:href="./assets/sprite.svg#icon-slider-button-arrow")
+
+  .swiper-button-prev.main-slider-button-prev
+    svg(width="10" height="20")
+      use(xlink:href="./assets/sprite.svg#icon-slider-button-arrow")

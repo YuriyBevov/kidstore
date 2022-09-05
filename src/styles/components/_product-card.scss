@@ -1,0 +1,84 @@
+.product-card {
+  width: 290px;
+  border: 1px solid var(--product-card-border-color);
+  border-radius: 8px;
+
+  &__header {
+    position: relative;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &-badges {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+    }
+
+    button {
+      @extend .button-default;
+      @extend .flex-centered-content;
+
+      position: absolute;
+      top: 20px;
+      right: 15px;
+
+      svg {
+        fill: none;
+        stroke: var(--gray-color-2);
+        stroke-width: 2px;
+      }
+    }
+  }
+
+  &__body {
+    padding: 15px;
+    padding-bottom: 10px;
+
+    h2 {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 20px;
+
+      @extend .two-lines-overflow;
+    }
+
+    span {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: block;
+      font-size: 15px;
+      line-height: 18px;
+      text-decoration-line: underline;
+
+      color: var(--gray-color-2);
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 15px;
+    @extend .flex-wrap;
+
+    button {
+      width: 125px;
+      font-size: 15px;
+      padding: 10px;
+
+      &:not(:last-child) {
+        margin-right: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+include ../../content/index-page/category
+
+section.category
+  .container.category__container
+    h2.visually-hidden Категории товаров
+
+    ul.category__list
+      each category in categoryListContent
+        li.category__list-item
+          a(href= category.url aria-label= category.title)
+            picture
+              source(srcset=`./assets/img/${category.img}@1x.webp 1x, ./assets/img/${category.img}@2x.webp 2x` type="image/webp")
+              img(src=`./assets/img/${category.img}@1x.jpg` srcset=`./assets/img/${category.img}.jpg 2x` alt= category.title width= category.imgWidth height= category.imgHeight)

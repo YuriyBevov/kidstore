@@ -18,9 +18,14 @@
     --white-color: #ffffff;
     --blue-1: #1864ff;
     --blue-2: #156eff;
+    --blue-3: #0073e6;
+    --blue-8: #ebf4fd;
     --blue-9: #eff6fe;
+    --green-1: #00b68a;
     --gray-color: #f4f4f4;
     --gray-color-2: #9d9da6;
+    --gray-color-3: #e3e3e3;
+    --warning-color: #fff068;
 
     --user-svg-color: var(--blue-1);
 
@@ -37,6 +42,13 @@
 
     --placeholder-color: #9d9da6;
 
+    --badge-blue-color: var(--blue-1);
+    --badge-green-color: var(--green-1);
+
+    --product-card-border-color: var(--gray-color-3);
+
+    --main-slider-button-bg-color: var(--blue-8);
+    --main-slider-button-arrow-color: var(--blue-3);
 
     --features-section-bg: var(--blue-9);
     --features-list-item-wrapper-bg: var(--white-color);

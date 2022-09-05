@@ -3,7 +3,7 @@
 *::after {
   box-sizing: inherit;
   border-radius: 0;
-
+  box-sizing: border-box;
   @extend .main-scroll;
 }
 
@@ -39,16 +39,12 @@ footer {
 
 img {
   height: auto;
-  max-width: 100%;
-  object-fit: cover;
 }
 
 a {
   text-decoration: none;
   width: fit-content;
-  min-width: 40px;
   height: fit-content;
-  min-height: 40px;
 }
 
 ul {
