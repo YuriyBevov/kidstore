@@ -1162,7 +1162,7 @@ button.swiper-pagination-bullet {
   --content-fluid-width: 1920px;
   --container-offset: 100px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width));
   --main-color: #303030;
   --main-bg-color: #ffffff;
   --white-color: #ffffff;
@@ -1589,13 +1589,14 @@ h1, h2, h3, h4, h5, h6, p {
   position: sticky;
   top: 0;
   background-color: var(--main-bg-color);
-  padding: 16px 0;
   z-index: 99;
 }
 .main-header__container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .main-nav {
@@ -2001,6 +2002,71 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Секции */
+.intro .main-slider--intro .swiper-pagination {
+  top: 40%;
+  right: -60px;
+  left: initial;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 5px;
+}
+.intro .main-slider--intro .swiper-pagination .swiper-pagination-bullet {
+  width: 40px;
+  height: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF)), #FFFFFF;
+  background: -o-linear-gradient(bottom, #FFFFFF, #FFFFFF), #FFFFFF;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+  opacity: 0.3;
+  border-radius: 23px;
+}
+.intro .main-slider--intro .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--white-color);
+  opacity: 1;
+}
+.intro__slide {
+  position: relative;
+}
+.intro__slide img {
+  width: 100%;
+  height: 100%;
+  max-height: 960px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.intro__slide::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  content: "";
+  background-image: url("../assets/img/hero-wave-svg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro__slide-content {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+.intro__slide-content h2 {
+  font-family: var(--accent-font-family);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 375px;
+  color: var(--white-color);
+}
+.intro__slide-content a {
+  min-width: 232px;
+}
+
 .category {
   padding: 40px 0 100px;
   -webkit-box-align: center;

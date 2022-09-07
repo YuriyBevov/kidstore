@@ -15,20 +15,26 @@ var mainSliders = document.querySelectorAll('.main-slider');
 
 if (mainSliders) {
   mainSliders.forEach(function (slider) {
-    var btnNext = slider.closest('.slider-section').querySelector('.main-slider-button-next');
-    var btnPrev = slider.closest('.slider-section').querySelector('.main-slider-button-prev');
+    var btnNext = slider.closest('section').querySelector('.main-slider-button-next');
+    var btnPrev = slider.closest('section').querySelector('.main-slider-button-prev');
     var pagination = slider.parentNode.querySelector('.main-slider-pagination');
     var isReviewSlider = slider.classList.contains('main-slider--review') ? true : false;
+    var isIntroSlider = slider.classList.contains('main-slider--intro') ? true : false;
     new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
-      modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-      slidesPerView: isReviewSlider ? 'auto' : 5,
-      spaceBetween: 30,
+      modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
+      slidesPerView: isReviewSlider ? 'auto' : isIntroSlider ? '1' : 5,
+      spaceBetween: !isIntroSlider ? 30 : 0,
       preloadImages: true,
       slidesOffsetAfter: isReviewSlider ? 172 : null,
       slidesOffsetBefore: isReviewSlider ? 172 : null,
+      effect: isIntroSlider ? 'fade' : null,
+      fadeEffect: {
+        crossFade: true
+      },
+      virtualTranslate: isIntroSlider ? true : false,
       navigation: {
-        nextEl: btnNext,
-        prevEl: btnPrev
+        nextEl: btnNext ? btnNext : null,
+        prevEl: btnPrev ? btnPrev : null
       },
       pagination: {
         el: pagination ? '.main-slider-pagination' : null,
@@ -39,6 +45,25 @@ if (mainSliders) {
       }
     });
   });
+  /*const introSlider = document.querySelector('.intro__slider');
+   if(introSlider) {
+    new Swiper(introSlider, {
+      modules: [Pagination, EffectFade],
+       slidesPerView: 1,
+      spaceBetween: 30,
+      preloadImages: true,
+       effect: 'fade',
+      fadeEffect: { crossFade: true },
+      virtualTranslate: true,
+       pagination: {
+        el: '.intro-swiper-pagination',
+        type: 'bullets',
+        dynamicBullets: true,
+        dynamicMainBullets: 5,
+        clickable: true
+      }
+    });
+  }*/
 }
 
 ;

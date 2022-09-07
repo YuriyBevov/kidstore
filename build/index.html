@@ -70,37 +70,26 @@
       <div class="index">
         <section class="intro">
           <h1 class="visually-hidden">Главный заголовок сайта!</h1>
-          <div class="swiper intro-swiper">
+          <div class="swiper main-slider main-slider--intro">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-slide-container" style="background-image: url(./assets/img/intro_slide1.png)">
-                  <div class="intro-swiper__wrapper">
-                    <div class="intro-swiper__container">
-                      <h2>Новая коллекция</h2><a class="main-btn-link" href="catalog.html">Смотреть</a>
-                    </div>
-                  </div>
+              <div class="swiper-slide intro__slide">
+                <picture>
+                  <source srcset="./assets/img/hero-slide-1@1x.webp 1x, ./assets/img/hero-slide-1@2x.webp 2x" type="image/webp"><img src="./assets/img/hero-slide-1@1x.jpg" srcset="./assets/img/hero-slide-1@2x.jpg 2x" alt="Новая коллекция" width="1920" height="740">
+                </picture>
+                <div class="intro__slide-content">
+                  <h2>Новая коллекция</h2><a class="main-btn-link" href="catalog.html">Смотреть</a>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide-container" style="background-image: url(./assets/img/intro_slide2.png)">
-                  <div class="intro-swiper__wrapper">
-                    <div class="intro-swiper__container">
-                      <h2>Распродажа до <span>-40%</span></h2><a class="main-btn-link" href="catalog.html">Смотреть</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide-container" style="background-image: url(./assets/img/intro_slide3.png)">
-                  <div class="intro-swiper__wrapper">
-                    <div class="intro-swiper__container">
-                      <h2><span>Суперцены</span> на игрушки</h2><a class="main-btn-link" href="catalog.html">Смотреть</a>
-                    </div>
-                  </div>
+              <div class="swiper-slide intro__slide">
+                <picture>
+                  <source srcset="./assets/img/hero-slide-1@1x.webp 1x, ./assets/img/hero-slide-1@2x.webp 2x" type="image/webp"><img src="./assets/img/hero-slide-1@1x.jpg" srcset="./assets/img/hero-slide-1@2x.jpg 2x" alt="Распродажа до &lt;span&gt;-40%&lt;/span&gt;" width="1920" height="740">
+                </picture>
+                <div class="intro__slide-content">
+                  <h2>Распродажа до <span>-40%</span></h2><a class="main-btn-link" href="catalog.html">Смотреть</a>
                 </div>
               </div>
             </div>
-            <div class="intro-swiper-pagination swiper-pagination"></div>
+            <div class="swiper-pagination main-slider-pagination"></div>
           </div>
         </section>
         <section class="category">
