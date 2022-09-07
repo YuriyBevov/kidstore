@@ -1,0 +1,20 @@
+mixin review-card(review)
+  .review-card
+    .review-card__sidebar
+      picture
+        source(srcset=`./assets/img/${review.avatar}@1x.webp 1x, ./assets/img/${review.avatar}@1x.webp 2x` type="image/webp")
+        img(src=`./assets/img/${review.avatar}@1x.png` srcset=`./assets/img/${review.avatar}@1x.png 2x` alt= review.userName width="100" height="100")
+
+      svg(width="54" height="43")
+        use(xlink:href="./assets/sprite.svg#icon-quote")
+    .review-card__content
+
+      .review-card__content-header
+        span.user-name= review.userName
+        span.review-date= review.date
+        .rate
+          img(src="../assets/img/rate-mock-stars.png" alt="stars")
+      .review-card__content-body
+        p!= review.reviewText
+      .review-card__content-footer
+        a(href="#") Подробнее

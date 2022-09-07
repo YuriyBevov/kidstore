@@ -7,10 +7,12 @@
     justify-content: center;
     min-height: 335px;
 
+    border-radius: 25px;
+    margin: 0 var(--inner-offset-width);
+
     background-image: url("../assets/img/register-offer-bg@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 25px;
     background-position: center;
 
     h2 {
@@ -27,6 +29,7 @@
         color: var(--warning-color);
       }
     }
+
     button {
       min-width: 300px;
     }

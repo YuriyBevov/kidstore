@@ -11,5 +11,25 @@
     margin-bottom: 20px;
 
     color: var(--main-color);
+
+    &--smaller {
+      font-family: var(--base-font-family);
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 0;
+
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
   }
+
+  &__desc {
+
+    &--bigger {
+      @extend .slider-section__title;
+      margin-bottom: 0;
+    }
+  }
+
 }

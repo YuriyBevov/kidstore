@@ -6,7 +6,7 @@
     --base-font-family: "Roboto", sans-serif;
     --accent-font-family: 'BalsamiqSans', sans-serif;
     --content-width: 1920px;
-    --content-fluid-width: 1790px;
+    --content-fluid-width: 1920px;
     --container-offset: 100px;
     --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
     --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
@@ -70,6 +70,8 @@
     --text-sm: clamp(16px, 3vw, 28px);
     --text-xs: 14px;
     --text-xxs: 12px;
+
+    --inner-offset-width: 72px;
 
     // transitions
     --main-transition: 0.2s ease-in;

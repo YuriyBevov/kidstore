@@ -1,7 +1,7 @@
 .main-slider {
   &-container {
     position: relative;
-    padding: 15px 30px;
+    padding: 15px var(--inner-offset-width);
 
     .swiper-slide {
       width: 290px;
@@ -29,11 +29,11 @@
   }
 
   &-button-next {
-    right: 3px;
+    right: 45px;
   }
 
   &-button-prev {
-    left: 3px;
+    left: 45px;
     svg {
       transform: rotate(180deg);
     }

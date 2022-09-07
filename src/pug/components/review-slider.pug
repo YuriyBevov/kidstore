@@ -1,0 +1,11 @@
+include ../content/common/review
+include ../mixins/review-card
+
+.main-slider-container
+  .swiper.main-slider.main-slider--review
+    .swiper-wrapper
+      each review in reviewListContent
+        .swiper-slide
+          +review-card(review)
+
+  .swiper-pagination.main-slider-pagination

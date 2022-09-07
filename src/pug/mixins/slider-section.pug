@@ -1,6 +1,25 @@
-mixin slider-section(cls, title)
-  section(class = cls).slider-section
-    .container
-      h2.slider-section__title= title
+mixin slider-section(props)
 
-      include ../components/main-slider
+  section(class = props.cls ? props.cls : null).slider-section
+    if props.type === 'PRODUCT'
+      .container
+        h2.slider-section__title= props.title
+
+        include ../components/product-slider
+
+    else if props.type === 'REVIEW'
+      .container
+        .review__header
+          h2.slider-section__title.slider-section__title--smaller= props.title
+          p.slider-section__desc.slider-section__desc--bigger!= props.desc
+
+          .swiper-button-next.main-slider-button-next
+            svg(width="10" height="20")
+              use(xlink:href="./assets/sprite.svg#icon-slider-button-arrow")
+
+          .swiper-button-prev.main-slider-button-prev
+            svg(width="10" height="20")
+              use(xlink:href="./assets/sprite.svg#icon-slider-button-arrow")
+
+      .container-fluid
+        include ../components/review-slider

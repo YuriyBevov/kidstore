@@ -15,14 +15,27 @@ var mainSliders = document.querySelectorAll('.main-slider');
 
 if (mainSliders) {
   mainSliders.forEach(function (slider) {
+    var btnNext = slider.closest('.slider-section').querySelector('.main-slider-button-next');
+    var btnPrev = slider.closest('.slider-section').querySelector('.main-slider-button-prev');
+    var pagination = slider.parentNode.querySelector('.main-slider-pagination');
+    var isReviewSlider = slider.classList.contains('main-slider--review') ? true : false;
     new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](slider, {
       modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],
-      slidesPerView: 'auto',
+      slidesPerView: isReviewSlider ? 'auto' : 5,
       spaceBetween: 30,
       preloadImages: true,
+      slidesOffsetAfter: isReviewSlider ? 172 : null,
+      slidesOffsetBefore: isReviewSlider ? 172 : null,
       navigation: {
-        nextEl: ".main-slider-button-next",
-        prevEl: ".main-slider-button-prev"
+        nextEl: btnNext,
+        prevEl: btnPrev
+      },
+      pagination: {
+        el: pagination ? '.main-slider-pagination' : null,
+        type: 'bullets',
+        dynamicBullets: true,
+        dynamicMainBullets: 5,
+        clickable: true
       }
     });
   });
