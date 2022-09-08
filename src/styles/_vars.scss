@@ -25,6 +25,7 @@
     --gray-color: #f4f4f4;
     --gray-color-2: #9d9da6;
     --gray-color-3: #e3e3e3;
+    --gray-color-4: #f5f5f7;
     --warning-color: #fff068;
 
     //svg
@@ -32,10 +33,19 @@
     --social-bg-color: var(--blue-1);
     --social-svg-color: var(--white-color);
     --user-svg-color: var(--blue-1);
+    //pagination
+    --pagination-btn-color: var(--blue-1);
+    --pagination-btn-bg: var(--gray-color-4);
+    --pagination-btn-active-color: var(--gray-color-4);
+    --pagination-btn-active-bg: var(--blue-1);
+    --pagination-btn-arrow: var(--blue-1);
+    --pagination-btn-arrow-disabled: var(--gray-color-2);
     //catalog-nav
     --catalog-nav-color: var(--gray-color);
     --catalog-nav-link-color: var(--main-color);
     --catalog-nav-link-focus-color: var(--blue-1);
+    //breadcrumbs
+    --breadcrumb-color: var(--gray-color-2);
     //link
     --main-nav-link-color: var(--main-color);
     --main-nav-link-focus-color: var(--blue-1);

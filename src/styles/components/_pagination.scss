@@ -1,0 +1,53 @@
+.pagination {
+  @extend .flex-wrap;
+
+  &__btn {
+    @extend .flex-centered-content;
+    width: fit-content;
+    min-width: 32px;
+    height: 32px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 8px;
+    color: var(--pagination-btn-color);
+    background-color: var(--pagination-btn-bg);
+    border-radius: 2px;
+
+    margin-right: 8px;
+
+    transition: background-color var(--main-transition), color var(--main-transition), opacity var(--main-transition);
+
+    svg {
+      fill: none;
+      stroke: var(--pagination-btn-arrow);
+      stroke-width: 2px;
+      transition: stroke var(--main-transition);
+    }
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &--active {
+      color: var(--pagination-btn-active-color);
+      background-color: var(--pagination-btn-active-bg);
+    }
+
+    &--disabled {
+      svg {
+        stroke: var(--pagination-btn-arrow-disabled);
+      }
+    }
+
+    @include m-b-laptop-up {
+      &:not(.pagination__btn--disabled) {
+        &:hover,
+        &:focus {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

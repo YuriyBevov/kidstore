@@ -1,0 +1,37 @@
+.breadcrumbs {
+  padding: 30px 0;
+  &__list {
+      @extend .flex-wrap;
+  }
+
+  &__item {
+    a,
+    span {
+      font-size: 18px;
+      line-height: 1;
+      color: var(--breadcrumb-color);
+    }
+
+    a {
+      position: relative;
+      padding-right: 40px;
+
+      &::after {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          content: '';
+
+          width: 6px;
+          height: 10px;
+
+          background-image: url("../assets/img/breadcrumb-arrow.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+      @extend .link-color-focus;
+    }
+  }
+}

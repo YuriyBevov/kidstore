@@ -28,12 +28,17 @@
 @import "./components/company-details";
 @import "./components/developer";
 @import "./components/page-blobs";
+@import "./components/breadcrumbs";
+@import "./components/pagination";
 
 /* Секции */
 @import "./sections/index-page/intro";
 @import "./sections/index-page/category";
 @import "./sections/index-page/features";
 @import "./sections/index-page/register-offer";
+
+@import "./sections/catalog-page/catalog";
+@import "./sections/catalog-page/catalog-list";
 
 @import "./sections/common/review";
 /* Модальные окна */

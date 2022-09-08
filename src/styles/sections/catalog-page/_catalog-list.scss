@@ -1,0 +1,16 @@
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 60px;
+
+  .product-card{
+    width: 100%;
+    min-width: 290px;
+
+    h2 {
+      min-height: 36px;
+    }
+  }
+}

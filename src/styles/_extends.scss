@@ -178,9 +178,11 @@
 .hover-opacity {
   transition: opacity var(--main-transition);
 
-  &:hover,
-  &:focus {
-    opacity: 0.7;
+  @include m-b-laptop-up {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -193,4 +195,8 @@
       color: var(--link-focus-color);
     }
   }
+}
+
+.outline {
+  outline: 1px solid red;
 }

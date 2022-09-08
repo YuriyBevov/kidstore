@@ -1,0 +1,7 @@
+include ../content/catalog/products
+include ../mixins/product-card
+
+ul.catalog-list
+  each product in productListContent
+    li.catalog-list-item
+      +product-card(product)
