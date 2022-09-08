@@ -9,18 +9,25 @@
 
 /* Компоненты */
 @import "./components/crawl-line";
-@import "./components/main-header";
+@import "./components/header";
 @import "./components/main-nav";
+@import "./components/main-nav-list";
 @import "./components/user";
 @import "./components/catalog-nav";
+@import "./components/catalog-nav-list";
 @import "./components/search";
-@import "./components/main-footer";
+@import "./components/footer";
+@import "./components/minor-nav-list";
 @import "./components/main-btn";
 @import "./components/slider-section";
 @import "./components/card-badge";
 @import "./components/product-card";
 @import "./components/main-slider";
 @import "./components/review-card";
+@import "./components/social";
+@import "./components/company-details";
+@import "./components/developer";
+@import "./components/page-blobs";
 
 /* Секции */
 @import "./sections/index-page/intro";

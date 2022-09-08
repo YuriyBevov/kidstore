@@ -1,13 +1,13 @@
 .main-btn-link {
   @extend .flex-centered-content;
 
-
   font-family: var(--accent-font-family);
   font-weight: 700;
   width: fit-content;
   height: fit-content;
   min-height: 40px;
   min-width: 40px;
+  line-height: 1;
 
   padding: 18px 10px;
   border-radius: 6px;

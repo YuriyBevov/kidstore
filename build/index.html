@@ -7,6 +7,9 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     <title></title>
+    <link rel="preload" href="./assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="./assets/fonts/BalsamiqSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="./assets/fonts/BalsamiqSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./assets/main.css"/>
     <script defer="defer" src="./assets/bundle.js"></script>
   </head>
@@ -16,18 +19,18 @@
         <p class="cmn__text">Работаем в штатном режиме!</p>
       </div>
     </div>
-    <header class="main-header">
-      <div class="container main-header__container">
+    <header class="header">
+      <div class="container header__container">
         <nav class="main-nav"><a class="main-nav__logo" href="index.html" aria-label="На главную">
             <svg width="173" height="55">
               <use xlink:href="./assets/sprite.svg#icon-logo-mock"></use>
             </svg></a>
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a href="about.html">О нас</a></li>
-            <li class="main-nav__list-item"><a href="contacts.html">Контакты</a></li>
-            <li class="main-nav__list-item"><a href="delivery.html">Доставка</a></li>
-            <li class="main-nav__list-item"><a href="conditions.html">Условия оплаты и возврата</a></li>
-            <li class="main-nav__list-item"><a href="confidential.html">Политика конфиденциальности</a></li>
+          <ul class="main-nav-list">
+            <li class="main-nav-list__item"><a href="about.html">О нас</a></li>
+            <li class="main-nav-list__item"><a href="contacts.html">Контакты</a></li>
+            <li class="main-nav-list__item"><a href="delivery.html">Доставка</a></li>
+            <li class="main-nav-list__item"><a href="conditions.html">Условия оплаты и возврата</a></li>
+            <li class="main-nav-list__item"><a href="confidential.html">Политика конфиденциальности</a></li>
           </ul>
         </nav>
         <div class="user"><a href="cabinet.html">
@@ -43,13 +46,13 @@
       </div>
       <nav class="catalog-nav">
         <div class="container catalog-nav__container">
-          <ul class="catalog-nav__list">
-            <li class="catalog-nav__list-item"><a href="catalog.html">Новинки</a></li>
-            <li class="catalog-nav__list-item"><a href="catalog.html">Товары для малышей</a></li>
-            <li class="catalog-nav__list-item"><a href="catalog.html">Мальчики</a></li>
-            <li class="catalog-nav__list-item"><a href="catalog.html">Девочки</a></li>
-            <li class="catalog-nav__list-item"><a href="catalog.html">Обувь</a></li>
-            <li class="catalog-nav__list-item"><a href="catalog.html">Игрушки</a></li>
+          <ul class="catalog-nav-list">
+            <li class="catalog-nav-list__item"><a href="catalog.html">Новинки</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Товары для малышей</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Мальчики</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Девочки</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Обувь</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Игрушки</a></li>
           </ul>
           <div class="catalog-nav__search">
             <div class="search">
@@ -139,7 +142,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон жёлтый утеплённый осенний</h2><span>1 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -160,7 +165,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон красный утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон красный утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-old">14 580 руб.</span><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -178,7 +185,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -199,7 +208,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон синий утеплённый зимний</h2><span>111 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон синий утеплённый зимний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -221,7 +232,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон жёлтый утеплённый осенний</h2><span>1 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -242,7 +255,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон красный утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон красный утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -260,7 +275,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -281,7 +298,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон синий утеплённый зимний</h2><span>111 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон синий утеплённый зимний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -380,7 +399,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон жёлтый утеплённый осенний</h2><span>1 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -401,7 +422,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон красный утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон красный утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-old">14 580 руб.</span><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -419,7 +442,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -440,7 +465,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон синий утеплённый зимний</h2><span>111 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон синий утеплённый зимний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -462,7 +489,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон жёлтый утеплённый осенний</h2><span>1 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -483,7 +512,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон красный утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон красный утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -501,7 +532,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2><span>11 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -522,7 +555,9 @@
                                             </button>
                                           </div>
                                           <div class="product-card__body">
-                                            <h2>Комбенезон синий утеплённый зимний</h2><span>111 580 руб.</span><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                                            <h2>Комбенезон синий утеплённый зимний</h2>
+                                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
                                           </div>
                                           <div class="product-card__footer">
                                                         <button class="main-btn--blue main-btn" type="button">В корзину</button>
@@ -545,14 +580,14 @@
                     </div>
                   </div>
                 </section>
-        <div class="register-offer">
+        <section class="register-offer">
           <div class="container">
             <div class="register-offer__wrapper">
               <h2>Зарегистрируйтесь на сайте и получите <br/><span>скидку 10%</span> на первую покупку</h2>
                       <button class="main-btn" type="button">Зарегистрироваться</button>
             </div>
           </div>
-        </div>
+        </section>
                 <section class="review slider-section">
                   <div class="container">
                     <div class="review__header">
@@ -792,8 +827,58 @@
                 </section>
       </div>
     </main>
-    <footer>
-      <p>footer</p>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__info"><a class="footer-logo" href="index.html">
+            <svg width="129" height="32">
+              <use xlink:href="./assets/sprite.svg#icon-logo-mock"></use>
+            </svg></a>
+          <div class="company-details"><span>© 2022 «Название магазина»</span><span>Реквизиты компании</span></div>
+        </div>
+        <div class="footer__nav-container">
+          <nav class="footer__nav">
+            <ul class="minor-nav-list">
+              <li class="minor-nav-list__item"><a href="about.html">О нас</a></li>
+              <li class="minor-nav-list__item"><a href="contacts.html">Контакты</a></li>
+              <li class="minor-nav-list__item"><a href="confidential.html">Политика конфиденциальности</a></li>
+              <li class="minor-nav-list__item"><a href="sertificates.html">Сертификаты на продукцию</a></li>
+              <li class="minor-nav-list__item"><a href="conditions.html">Условия оплаты и возврата</a></li>
+              <li class="minor-nav-list__item"><a href="public.html">Публичная оферта</a></li>
+              <li class="minor-nav-list__item"><a href="personal.html">Обработка и защита персональных данных</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__catalog-nav">
+            <ul class="catalog-nav-list">
+              <li class="catalog-nav-list__item"><a href="catalog.html">Новинки</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Товары для малышей</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Мальчики</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Девочки</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Обувь</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Игрушки</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-field"><span>Телефоны для связи:</span><a href="tel:88121234567">8 (812) 123-45-67</a><a href="tel:88121234567">8 (812) 123-45-67</a></div>
+          <div class="footer__contact-field"><span>E-mail:</span><a href="mailto:yandex@yandex.ru">yandex@yandex.ru</a></div>
+          <div class="footer__contact-field"><span>Мы в соцсетях:</span>
+            <div class="social"><a href="#" aria-label="facebook" rel="noopener norefferer nofollow">
+                <svg width="12" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-fb"></use>
+                </svg></a><a href="#" aria-label="instagram" rel="noopener norefferer nofollow">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-insta"></use>
+                </svg></a><a href="#" aria-label="telegram" rel="noopener norefferer nofollow">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-tg"></use>
+                </svg></a><a href="#" aria-label="whatsapp" rel="noopener norefferer nofollow">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-whatsapp"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="developer"><a href="https://www.littleweb.ru" rel="noopener noreferrer nofollow" aria-label="Сайт разработан - LittleWeb.ru"><img src="./assets/img/delevoper-icon.svg" width="180" height="60" alt="LittleWeb.ru"></a></div>
     </footer>
     <!--include ./modals/...-->
   </body>

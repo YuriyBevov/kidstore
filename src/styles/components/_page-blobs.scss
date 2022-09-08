@@ -1,0 +1,30 @@
+
+.index {
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: '';
+    background-image: url("../assets/img/page-blob.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -1;
+  }
+
+  &::before {
+    bottom: 15%;
+    left: -420px;
+    width: 751px;
+    height: 740px;
+  }
+
+  &::after {
+    top: 15%;
+    left: 80%;
+    width: 1160px;
+    height: 1143px;
+  }
+}

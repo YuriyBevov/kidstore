@@ -27,41 +27,49 @@
     --gray-color-3: #e3e3e3;
     --warning-color: #fff068;
 
+    //svg
+    --svg-color: var(--blue-1);
+    --social-bg-color: var(--blue-1);
+    --social-svg-color: var(--white-color);
     --user-svg-color: var(--blue-1);
-
+    //catalog-nav
     --catalog-nav-color: var(--gray-color);
-
     --catalog-nav-link-color: var(--main-color);
     --catalog-nav-link-focus-color: var(--blue-1);
-
+    //link
     --main-nav-link-color: var(--main-color);
     --main-nav-link-focus-color: var(--blue-1);
-
+    --link-focus-color: var(--blue-1);
+    //search-icon
     --search-icon-color:  var(--main-color);
     --search-icon-focus-color: var(--blue-1);
-
-    --placeholder-color: #9d9da6;
-
+    //product-card
     --badge-blue-color: var(--blue-1);
     --badge-green-color: var(--green-1);
-
     --product-card-border-color: var(--gray-color-3);
-
-    --main-slider-button-bg-color: var(--blue-8);
-    --main-slider-button-arrow-color: var(--blue-3);
-
+    --product-price-old: #2f3441;
+    //features section
     --features-section-bg: var(--blue-9);
     --features-list-item-wrapper-bg: var(--white-color);
     --features-list-item-wrapper-focus-bg: var(--blue-9);
     --features-list-item-icon-color: var(--blue-2);
-
+    //main-btn
     --main-btn-link-color: var(--white-color);
+    //swiper-pagintaion
+    --white-gradient: linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
+    --blue-gradient:  linear-gradient(0deg, #b8d7f2, #b8d7f2), #b8d7f2;
+    //slider btns
+    --main-slider-button-bg-color: var(--blue-8);
+    --main-slider-button-arrow-color: var(--blue-3);
+    //footer
+    --footer-bg: var(--blue-9);
+    //forms
+    --placeholder-color: var(--gray-color-2);
 
     // scrollbar
     --main-scrollbar-width: 6px;
     --main-scrollbar-color: var(--main-bg-color);
     --main-scrollbar-thumb-color: var(--main-color);
-
     // text-sizes
     --text-xxl: clamp(36px, 7.5vw, 64px);
     --text-xl: clamp(28px, 5vw, 44px);
@@ -70,9 +78,8 @@
     --text-sm: clamp(16px, 3vw, 28px);
     --text-xs: 14px;
     --text-xxs: 12px;
-
+    //offsets
     --inner-offset-width: 72px;
-
     // transitions
     --main-transition: 0.2s ease-in;
   }

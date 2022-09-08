@@ -17,7 +17,10 @@ mixin product-card(product)
 
     .product-card__body
       h2!= product.title
-      span= `${product.price} руб.`
+      .product-card__body-price
+        if product.oldprice
+          span.product-card__body-price-old= `${product.oldprice} руб.`
+        span.product-card__body-price-current= `${product.price} руб.`
 
       a(href="#") Характеристики
       a(href="product.html") Подробно

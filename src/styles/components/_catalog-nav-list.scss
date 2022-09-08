@@ -1,0 +1,13 @@
+.catalog-nav-list {
+  &__item {
+    a {
+      @extend .flex-centered-content;
+      font-weight: 400;
+
+      text-transform: capitalize;
+
+      color: var(--catalog-nav-link-color);
+      @extend .link-color-focus;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.social {
+  @extend .flex-wrap;
+  align-items: center;
+
+  a {
+    @extend .flex-centered-content;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--social-bg-color);
+
+    svg {
+      fill: var(--social-svg-color);
+    }
+
+    &:not(:last-child) { margin-right: 25px; }
+
+    transition: opacity var(--main-transition);
+
+    @include m-b-laptop-up {
+      &:focus,
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

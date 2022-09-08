@@ -1,0 +1,9 @@
+.company-details {
+  @extend .flex-column;
+
+  // mock!!
+  span {
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+}

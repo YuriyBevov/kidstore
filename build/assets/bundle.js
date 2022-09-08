@@ -11,10 +11,10 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
-var mainSliders = document.querySelectorAll('.main-slider');
+var sliders = document.querySelectorAll('.main-slider');
 
-if (mainSliders) {
-  mainSliders.forEach(function (slider) {
+if (sliders) {
+  sliders.forEach(function (slider) {
     var btnNext = slider.closest('section').querySelector('.main-slider-button-next');
     var btnPrev = slider.closest('section').querySelector('.main-slider-button-prev');
     var pagination = slider.parentNode.querySelector('.main-slider-pagination');
@@ -37,7 +37,7 @@ if (mainSliders) {
         prevEl: btnPrev ? btnPrev : null
       },
       pagination: {
-        el: pagination ? '.main-slider-pagination' : null,
+        el: pagination ? pagination : null,
         type: 'bullets',
         dynamicBullets: true,
         dynamicMainBullets: 5,
@@ -45,25 +45,6 @@ if (mainSliders) {
       }
     });
   });
-  /*const introSlider = document.querySelector('.intro__slider');
-   if(introSlider) {
-    new Swiper(introSlider, {
-      modules: [Pagination, EffectFade],
-       slidesPerView: 1,
-      spaceBetween: 30,
-      preloadImages: true,
-       effect: 'fade',
-      fadeEffect: { crossFade: true },
-      virtualTranslate: true,
-       pagination: {
-        el: '.intro-swiper-pagination',
-        type: 'bullets',
-        dynamicBullets: true,
-        dynamicMainBullets: 5,
-        clickable: true
-      }
-    });
-  }*/
 }
 
 ;

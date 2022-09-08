@@ -1,9 +1,9 @@
 import Swiper, { EffectFade, Navigation, Pagination } from 'swiper';
 
-const mainSliders = document.querySelectorAll('.main-slider');
+const sliders = document.querySelectorAll('.main-slider');
 
-if(mainSliders) {
-  mainSliders.forEach(slider => {
+if(sliders) {
+  sliders.forEach(slider => {
     const btnNext = slider.closest('section').querySelector('.main-slider-button-next');
     const btnPrev = slider.closest('section').querySelector('.main-slider-button-prev');
 
@@ -30,7 +30,7 @@ if(mainSliders) {
       },
 
       pagination: {
-        el: pagination ? '.main-slider-pagination' : null,
+        el: pagination ? pagination : null,
         type: 'bullets',
         dynamicBullets: true,
         dynamicMainBullets: 5,
@@ -38,28 +38,4 @@ if(mainSliders) {
       }
     });
   });
-
-  /*const introSlider = document.querySelector('.intro__slider');
-
-  if(introSlider) {
-    new Swiper(introSlider, {
-      modules: [Pagination, EffectFade],
-
-      slidesPerView: 1,
-      spaceBetween: 30,
-      preloadImages: true,
-
-      effect: 'fade',
-      fadeEffect: { crossFade: true },
-      virtualTranslate: true,
-
-      pagination: {
-        el: '.intro-swiper-pagination',
-        type: 'bullets',
-        dynamicBullets: true,
-        dynamicMainBullets: 5,
-        clickable: true
-      }
-    });
-  }*/
 };

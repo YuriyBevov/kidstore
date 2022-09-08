@@ -183,3 +183,14 @@
     opacity: 0.7;
   }
 }
+
+.link-color-focus {
+  transition: color var(--main-transition);
+
+  @include m-b-laptop-up {
+    &:hover,
+    &:focus {
+      color: var(--link-focus-color);
+    }
+  }
+}

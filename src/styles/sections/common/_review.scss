@@ -36,7 +36,7 @@
     .swiper-pagination-bullet {
       width: 40px;
       height: 5px;
-      background: linear-gradient(0deg, #B8D7F2, #B8D7F2), #B8D7F2;
+      background: var(--blue-gradient);
       border-radius: 23px;
     }
   }

@@ -1,0 +1,9 @@
+.main-nav-list {
+  &__item {
+    a {
+      @extend .flex-centered-content;
+      color: var(--main-nav-link-color);
+      @extend .link-color-focus;
+    }
+  }
+}

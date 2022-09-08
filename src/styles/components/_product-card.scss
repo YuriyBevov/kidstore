@@ -2,6 +2,7 @@
   width: 290px;
   border: 1px solid var(--product-card-border-color);
   border-radius: 8px;
+  background-color: var(--main-bg-color);
 
   &__header {
     position: relative;
@@ -45,12 +46,27 @@
       @extend .two-lines-overflow;
     }
 
-    span {
-      display: inline-block;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 24px;
+    &-price {
+      @extend .flex-wrap;
+      align-items: center;
       margin-bottom: 10px;
+
+      &-current {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      &-old {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: line-through;
+
+        margin-right: 20px;
+        color: var(--product-price-old);
+      }
     }
 
     a {
