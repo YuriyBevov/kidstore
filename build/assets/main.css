@@ -2294,9 +2294,6 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   margin: 175px 0;
   padding: 20px 0;
-  /*background-image: url("../assets/img/feature-section-bg@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;*/
   background-color: var(--features-section-bg);
 }
 .features::before, .features::after {
@@ -2304,9 +2301,6 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   content: "";
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .features::before {
   top: -117px;
@@ -2314,8 +2308,8 @@ h1, h2, h3, h4, h5, h6, p {
   background-image: url("../assets/img/features-section-wave-top.svg");
 }
 .features::after {
-  bottom: -72px;
-  height: 72px;
+  bottom: -102px;
+  height: 102px;
   background-image: url("../assets/img/features-section-wave-bottom.svg");
 }
 .features__container {
