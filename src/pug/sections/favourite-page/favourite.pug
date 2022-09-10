@@ -1,0 +1,14 @@
+include ../../mixins/main-btn
+include ../../content/catalog/products
+include ../../mixins/product-card
+
+section.favourite
+  .container
+    h1 Избранное
+
+    ul.favourite__list
+      each product in productListContent
+        li.favourite__list-item
+          +product-card(product)
+
+    +main-btn('link', 'Продолжить покупки', 'catalog.html', 'main-btn--outlined favourite__link')

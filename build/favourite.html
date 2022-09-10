@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title></title>
+    <link rel="preload" href="./assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="./assets/fonts/BalsamiqSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="./assets/fonts/BalsamiqSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/main.css"/>
+    <script defer="defer" src="./assets/bundle.js"></script>
+  </head>
+  <body>
+    <div class="crawl-line">
+      <div class="container">
+        <p class="cmn__text">Работаем в штатном режиме!</p>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="main-nav"><a class="main-nav__logo" href="index.html" aria-label="На главную">
+            <svg width="173" height="55">
+              <use xlink:href="./assets/sprite.svg#icon-logo-mock"></use>
+            </svg></a>
+          <ul class="main-nav-list">
+            <li class="main-nav-list__item"><a href="about.html">О нас</a></li>
+            <li class="main-nav-list__item"><a href="contacts.html">Контакты</a></li>
+            <li class="main-nav-list__item"><a href="delivery.html">Доставка</a></li>
+            <li class="main-nav-list__item"><a href="conditions.html">Условия оплаты и возврата</a></li>
+            <li class="main-nav-list__item"><a href="confidential.html">Политика конфиденциальности</a></li>
+          </ul>
+        </nav>
+        <div class="user"><a href="cabinet.html">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/sprite.svg#icon-user"></use>
+            </svg><span>Личный кабинет</span></a><a href="cabinet.html">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+            </svg><span>Избранное</span></a><a href="cabinet.html">
+            <svg width="24" height="24">
+              <use xlink:href="./assets/sprite.svg#icon-cart"></use>
+            </svg><span>Корзина</span></a></div>
+      </div>
+      <nav class="catalog-nav">
+        <div class="container catalog-nav__container">
+          <ul class="catalog-nav-list">
+            <li class="catalog-nav-list__item"><a href="catalog.html">Новинки</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Товары для малышей</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Мальчики</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Девочки</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Обувь</a></li>
+            <li class="catalog-nav-list__item"><a href="catalog.html">Игрушки</a></li>
+          </ul>
+          <div class="catalog-nav__search">
+            <div class="search">
+              <form action="#">
+                <input type="text" placeholder="Поиск">
+                <button type="submit" aria-label="Поиск">
+                  <svg width="24" height="24">
+                    <use xlink:href="./assets/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="catalog-page">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs__item"><span>Избранное</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section class="favourite">
+          <div class="container">
+            <h1>Избранное</h1>
+            <ul class="favourite__list">
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон жёлтый утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон красный утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон красный утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-old">14 580 руб.</span><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон фиолетовый утеплённый осенний" width="290" height="285">
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон синий утеплённый зимний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон синий утеплённый зимний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон жёлтый утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон красный утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон красный утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон фиолетовый утеплённый осенний" width="290" height="285">
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон синий утеплённый зимний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон синий утеплённый зимний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон жёлтый утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон красный утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон красный утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-old">14 580 руб.</span><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон фиолетовый утеплённый осенний" width="290" height="285">
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон синий утеплённый зимний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон синий утеплённый зимний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон жёлтый утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон жёлтый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">1 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон красный утеплённый осенний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--green"><span>New</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон красный утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон фиолетовый утеплённый осенний" width="290" height="285">
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон фиолетовый утеплённый осенний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">11 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+              <li class="favourite__list-item">
+                        <div class="product-card">
+                          <div class="product-card__header"><img src="./assets/img/product-card-image@1x.png" alt="Комбенезон синий утеплённый зимний" width="290" height="285">
+                            <div class="product-card__header-badges">
+                                      <div class="badge badge--blue"><span>Sale</span></div>
+                            </div>
+                            <button class="js-add-favourite" type="button" aria-label="Добавить в избранное">
+                              <svg width="24" height="24">
+                                <use xlink:href="./assets/sprite.svg#icon-heart"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="product-card__body">
+                            <h2>Комбенезон синий утеплённый зимний</h2>
+                            <div class="product-card__body-price"><span class="product-card__body-price-current">111 580 руб.</span>
+                            </div><a href="#">Характеристики</a><a href="product.html">Подробно</a>
+                          </div>
+                          <div class="product-card__footer">
+                                    <button class="main-btn--blue main-btn" type="button">В корзину</button>
+                                    <button class="main-btn" type="button">Купить сейчас</button>
+                          </div>
+                        </div>
+              </li>
+            </ul><a class="main-btn--outlined favourite__link main-btn-link" href="catalog.html">Продолжить покупки</a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__info"><a class="footer-logo" href="index.html">
+            <svg width="129" height="32">
+              <use xlink:href="./assets/sprite.svg#icon-logo-mock"></use>
+            </svg></a>
+          <div class="company-details"><span>© 2022 «Название магазина»</span><span>Реквизиты компании</span></div>
+        </div>
+        <div class="footer__nav-container">
+          <nav class="footer__nav">
+            <ul class="minor-nav-list">
+              <li class="minor-nav-list__item"><a href="about.html">О нас</a></li>
+              <li class="minor-nav-list__item"><a href="contacts.html">Контакты</a></li>
+              <li class="minor-nav-list__item"><a href="confidential.html">Политика конфиденциальности</a></li>
+              <li class="minor-nav-list__item"><a href="sertificates.html">Сертификаты на продукцию</a></li>
+              <li class="minor-nav-list__item"><a href="conditions.html">Условия оплаты и возврата</a></li>
+              <li class="minor-nav-list__item"><a href="public.html">Публичная оферта</a></li>
+              <li class="minor-nav-list__item"><a href="personal.html">Обработка и защита персональных данных</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__catalog-nav">
+            <ul class="catalog-nav-list">
+              <li class="catalog-nav-list__item"><a href="catalog.html">Новинки</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Товары для малышей</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Мальчики</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Девочки</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Обувь</a></li>
+              <li class="catalog-nav-list__item"><a href="catalog.html">Игрушки</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-field"><span>Телефоны для связи:</span><a href="tel:88121234567">8 (812) 123-45-67</a><a href="tel:88121234567">8 (812) 123-45-67</a></div>
+          <div class="footer__contact-field"><span>E-mail:</span><a href="mailto:yandex@yandex.ru">yandex@yandex.ru</a></div>
+          <div class="footer__contact-field"><span>Мы в соцсетях:</span>
+            <div class="social"><a href="#" aria-label="facebook" rel="noopener norefferer nofollow">
+                <svg width="12" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-fb"></use>
+                </svg></a><a href="#" aria-label="instagram" rel="noopener norefferer nofollow">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-insta"></use>
+                </svg></a><a href="#" aria-label="telegram" rel="noopener norefferer nofollow">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-tg"></use>
+                </svg></a><a href="#" aria-label="whatsapp" rel="noopener norefferer nofollow">
+                <svg width="24" height="24">
+                  <use xlink:href="./assets/sprite.svg#icon-whatsapp"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="developer"><a href="https://www.littleweb.ru" rel="noopener noreferrer nofollow" aria-label="Сайт разработан - LittleWeb.ru"><img src="./assets/img/delevoper-icon.svg" width="180" height="60" alt="LittleWeb.ru"></a></div>
+    </footer>
+    <!--include ./modals/...-->
+  </body>
+</html>

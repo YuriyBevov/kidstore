@@ -1,0 +1,19 @@
+extends layouts/main-layout.pug
+include ./mixins/breadcrumbs
+block variables
+  -
+    const title = ""
+    const desc = ""
+    const keywords = ""
+
+block content
+  .catalog-page
+    +breadcrumbs([
+        { title: 'Главная', link: 'index.html' },
+        { title: 'Избранное' }
+    ])
+
+    include ./sections/favourite-page/favourite
+
+block modals
+  //include ./modals/...
