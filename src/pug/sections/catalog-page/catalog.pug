@@ -7,7 +7,13 @@ section.catalog
 
     .catalog__main
       .catalog__main-header
-        p sorting
+        span.catalog__main-header-text Сортировка:
+
+        select(id="catalog-sort").custom-select
+          option(value="PRICE_UP" selected) По возрастанию цены
+          option(value="PRICE_DOWN") По уменьшению цены
+          option(value="POPULAR") По популярности
+          option(value="NEWEST") По новизне
 
       .catalog__main-body
         include ../../components/catalog-list

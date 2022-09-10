@@ -1,6 +1,49 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scripts/modules/filter-checkbox-focus.js":
+/*!******************************************************!*\
+  !*** ./src/scripts/modules/filter-checkbox-focus.js ***!
+  \******************************************************/
+/***/ (() => {
+
+var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+if (checkboxes) {
+  checkboxes.forEach(function (chx) {
+    var label = chx.parentNode.querySelector('label');
+
+    if (chx.nextElementSibling === label) {
+      label.addEventListener('keydown', function (evt) {
+        if (evt.code === 'Enter' || evt.code === 'Space') {
+          evt.preventDefault();
+          chx.checked = !chx.checked;
+        }
+      });
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./src/scripts/modules/filter-collapsing.js":
+/*!**************************************************!*\
+  !*** ./src/scripts/modules/filter-collapsing.js ***!
+  \**************************************************/
+/***/ (() => {
+
+var btns = document.querySelectorAll('.filter-head-btn');
+
+if (btns) {
+  btns.forEach(function (btn) {
+    btn.addEventListener('click', function (evt) {
+      evt.target.closest('.filter__field').classList.toggle('collapsed');
+    });
+  });
+}
+
+/***/ }),
+
 /***/ "./src/scripts/modules/range.js":
 /*!**************************************!*\
   !*** ./src/scripts/modules/range.js ***!
@@ -16265,6 +16308,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_swiper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/swiper.js */ "./src/scripts/modules/swiper.js");
 /* harmony import */ var _modules_range_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/range.js */ "./src/scripts/modules/range.js");
 /* harmony import */ var _modules_select_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/select.js */ "./src/scripts/modules/select.js");
+/* harmony import */ var _modules_filter_collapsing_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/filter-collapsing.js */ "./src/scripts/modules/filter-collapsing.js");
+/* harmony import */ var _modules_filter_collapsing_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_filter_collapsing_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_filter_checkbox_focus_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/filter-checkbox-focus.js */ "./src/scripts/modules/filter-checkbox-focus.js");
+/* harmony import */ var _modules_filter_checkbox_focus_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_filter_checkbox_focus_js__WEBPACK_IMPORTED_MODULE_4__);
+
+
 
 
 

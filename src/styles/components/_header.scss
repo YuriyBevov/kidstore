@@ -5,10 +5,16 @@
 
   z-index: 99;
   &__container {
+    position: relative;
+
     @extend .flex-wrap;
     align-items: center;
 
     padding-top: 16px;
     padding-bottom: 16px;
+
+    background-color: var(--main-bg-color);
+
+    z-index: 10;
   }
 }

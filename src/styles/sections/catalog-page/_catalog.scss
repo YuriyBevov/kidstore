@@ -7,8 +7,6 @@
   }
 
   &__sidebar {
-    @extend .outline;
-
     h1 {
       font-family: var(--accent-font-family);
       font-weight: 700;
@@ -19,9 +17,34 @@
   }
 
   &__main {
-    @extend .outline;
-
     &-header {
+      @extend .flex-wrap;
+      align-items: center;
+      padding-top: 17px;
+      margin-bottom: 40px;
+
+      &-text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+
+      .custom-select-panel,
+      .custom-select-option {
+        width: 165px;
+      }
+
+      .custom-select-opener {
+        width: fit-content;
+        line-height: 1;
+        padding-right: 30px;
+        padding-bottom: 5px;
+
+        &::before {
+          height: 8px;
+        }
+      }
 
     }
   }

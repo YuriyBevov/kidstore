@@ -73,6 +73,16 @@
         }
       }
     }
+
+    &.collapsed {
+      .filter__field-body {
+        display: none;
+      }
+
+      .filter-head-btn svg {
+        transform: rotate(180deg);
+      }
+    }
   }
 
   &__btn {
@@ -80,4 +90,5 @@
     margin-bottom: 16px;
     height: 46px;
   }
+
 }
