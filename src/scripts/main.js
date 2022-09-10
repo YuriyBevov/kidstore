@@ -1,4 +1,3 @@
-//import './modules/module.js';
-//import "./vue/main.js";
-
 import './modules/swiper.js';
+import "./modules/range.js";
+import "./modules/select.js";

@@ -23,4 +23,10 @@
   &--blue {
     background: linear-gradient(265.07deg, #1862FF 4.96%, #00D2FF 112.8%);
   }
+
+  &--outlined {
+    background: transparent;
+    border: 1px solid var(--gray-color-2);
+    color: var(--gray-color-2);
+  }
 }

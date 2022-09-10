@@ -65,6 +65,12 @@
   white-space: nowrap;
 }
 
+.text-ellypsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .two-lines-overflow {
   overflow: hidden;
   -o-text-overflow: ellipsis;

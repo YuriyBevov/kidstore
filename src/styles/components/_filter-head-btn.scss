@@ -1,0 +1,17 @@
+.filter-head-btn {
+  @extend .flex-wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  svg {
+    fill: none;
+    stroke: var(--main-color);
+    stroke-width: 2px;
+  }
+}

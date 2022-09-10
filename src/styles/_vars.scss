@@ -26,6 +26,7 @@
     --gray-color-2: #9d9da6;
     --gray-color-3: #e3e3e3;
     --gray-color-4: #f5f5f7;
+    --gray-color-5: #f8f8f8;
     --warning-color: #fff068;
 
     //svg
@@ -75,7 +76,14 @@
     --footer-bg: var(--blue-9);
     //forms
     --placeholder-color: var(--gray-color-2);
-
+    --checkbox-border: var(--gray-color-3);
+    --range-handle-border: 4px solid (--blue-1);
+    --range-handle-bg: var(--blue-1);
+    --range-line-color: var(--gray-color-2);
+    --range-line-active-color: var(--blue-1);
+    --range-input-bg: var(--gray-color-5);
+    --range-input-border:  1px solid var(--gray-color-3);
+    --range-input-border-radius: 21px;
     // scrollbar
     --main-scrollbar-width: 6px;
     --main-scrollbar-color: var(--main-bg-color);

@@ -1,0 +1,8 @@
+include ./main-checkbox
+
+mixin filter-field-body(data)
+  ul.filter__field-body
+    each item in data
+      li
+        +main-checkbox(item.checkbox.name, item.checkbox.title)
+        span.filter__field-count= item.rest

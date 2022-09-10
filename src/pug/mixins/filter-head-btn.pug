@@ -1,0 +1,5 @@
+mixin filter-head-btn(title, cls)
+  button(type="button" class= cls ? cls : null).filter-head-btn
+    span=title
+    svg(width="15" height="10")
+      use(xlink:href="./assets/sprite.svg#icon-filter-arrow")

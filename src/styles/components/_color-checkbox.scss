@@ -1,0 +1,39 @@
+.color-checkbox {
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  label {
+      position: relative;
+      display: block;
+      cursor: pointer;
+
+      width: 30px;
+      height: 30px;
+
+      border-radius: 50%;
+
+      &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          content: '';
+
+          width: 20px;
+          height: 20px;
+      }
+
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+      background-image: url('../assets/img/icon-checkbox-arrow.svg');
+      background-size: 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+}

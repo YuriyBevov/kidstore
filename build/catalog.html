@@ -85,7 +85,276 @@
           <div class="container catalog__container">
             <div class="catalog__sidebar">
               <h1>Каталог</h1>
-              <p>filtration</p>
+              <div class="catalog-filter">
+                <form class="filter" action="#">
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Категории товаров</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <ul class="filter__field-body">
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="clothes" checked>
+                                                      <label class="checkbox-label" for="clothes">Одежда</label>
+                                                    </div><span class="filter__field-count">119999</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="shoes" checked>
+                                                      <label class="checkbox-label" for="shoes">Обувь</label>
+                                                    </div><span class="filter__field-count">296</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="toys" checked>
+                                                      <label class="checkbox-label" for="toys">Игрушки</label>
+                                                    </div><span class="filter__field-count">93</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="babies" checked>
+                                                      <label class="checkbox-label" for="babies">Товары для малышей</label>
+                                                    </div><span class="filter__field-count">11</span>
+                                    </li>
+                                  </ul>
+                  </fieldset>
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Пол</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <ul class="filter__field-body">
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="boy" checked>
+                                                      <label class="checkbox-label" for="boy">Мужской</label>
+                                                    </div><span class="filter__field-count">1109</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="girl" checked>
+                                                      <label class="checkbox-label" for="girl">Женский</label>
+                                                    </div><span class="filter__field-count">896</span>
+                                    </li>
+                                  </ul>
+                  </fieldset>
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Состав</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <ul class="filter__field-body">
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="synthetics" checked>
+                                                      <label class="checkbox-label" for="synthetics">Синтетика</label>
+                                                    </div><span class="filter__field-count">1109</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="cotton" checked>
+                                                      <label class="checkbox-label" for="cotton">Хлопок</label>
+                                                    </div><span class="filter__field-count">8096</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="velour" checked>
+                                                      <label class="checkbox-label" for="velour">Велюр</label>
+                                                    </div><span class="filter__field-count">1896</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="viscose" checked>
+                                                      <label class="checkbox-label" for="viscose">Вискоза</label>
+                                                    </div><span class="filter__field-count">11109</span>
+                                    </li>
+                                  </ul>
+                  </fieldset>
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Бренды</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <ul class="filter__field-body">
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="1TOY" checked>
+                                                      <label class="checkbox-label" for="1TOY">1TOY</label>
+                                                    </div><span class="filter__field-count">1109</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="ARKADE" checked>
+                                                      <label class="checkbox-label" for="ARKADE">ARKADE</label>
+                                                    </div><span class="filter__field-count">8096</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="Arau" checked>
+                                                      <label class="checkbox-label" for="Arau">Arau</label>
+                                                    </div><span class="filter__field-count">1896</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="BT21" checked>
+                                                      <label class="checkbox-label" for="BT21">BT21</label>
+                                                    </div><span class="filter__field-count">11109</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="BabyEinstein" checked>
+                                                      <label class="checkbox-label" for="BabyEinstein">BabyEinstein</label>
+                                                    </div><span class="filter__field-count">8096</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="Ben-10" checked>
+                                                      <label class="checkbox-label" for="Ben-10">Ben-10</label>
+                                                    </div><span class="filter__field-count">1896</span>
+                                    </li>
+                                  </ul>
+                  </fieldset>
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Цвет</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <ul class="filter__field-body filter__field-body--color">
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="white-color">
+                                        <label for="white-color" aria-label="Белый цвет" style="background-image: url('./assets/img/color-checkbox-bg-white.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="lightgray-color">
+                                        <label for="lightgray-color" aria-label="Светло-серый цвет" style="background-image: url('./assets/img/color-checkbox-bg-lightgray.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="yellow-color">
+                                        <label for="yellow-color" aria-label="Желтый цвет" style="background-image: url('./assets/img/color-checkbox-bg-yellow.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="orange-color">
+                                        <label for="orange-color" aria-label="Орнжевый цвет" style="background-image: url('./assets/img/color-checkbox-bg-orange.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="red-color">
+                                        <label for="red-color" aria-label="Красный цвет" style="background-image: url('./assets/img/color-checkbox-bg-red.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="violet-color">
+                                        <label for="violet-color" aria-label="Фиолетовый цвет" style="background-image: url('./assets/img/color-checkbox-bg-violet.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="darkblue-color">
+                                        <label for="darkblue-color" aria-label="Темно-синий цвет" style="background-image: url('./assets/img/color-checkbox-bg-darkblue.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="blue-color">
+                                        <label for="blue-color" aria-label="Голубой цвет" style="background-image: url('./assets/img/color-checkbox-bg-blue.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="green-color">
+                                        <label for="green-color" aria-label="Зеленый цвет" style="background-image: url('./assets/img/color-checkbox-bg-green.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="brown-color">
+                                        <label for="brown-color" aria-label="Коричневый цвет" style="background-image: url('./assets/img/color-checkbox-bg-brown.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="fullgray-color">
+                                        <label for="fullgray-color" aria-label="Серый цвет" style="background-image: url('./assets/img/color-checkbox-bg-fullgray.png')"></label>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="color-checkbox">
+                                        <input type="checkbox" id="rainbow-color">
+                                        <label for="rainbow-color" aria-label="Радужный цвет" style="background-image: url('./assets/img/color-checkbox-bg-rainbow.png')"></label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                  </fieldset>
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Размер</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                    <fieldset class="filter__field-body filter__field-body--size">
+                      <select class="custom-select" id="product-size">
+                        <option value="80">80</option>
+                        <option value="84">84</option>
+                        <option value="88">88</option>
+                        <option value="92">92</option>
+                        <option value="96">96</option>
+                        <option value="100">100</option>
+                        <option value="104" selected>104</option>
+                      </select><a href="#">Таблица размеров</a>
+                    </fieldset>
+                  </fieldset>
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Цена</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                    <fieldset class="filter__field-body filter__field-body--range">
+                      <input type="number" placeholder="0" id="priceFrom" min="0" max="500000" step="100">
+                      <input type="number" placeholder="50000" min="0" max="50000" id="priceTo" step="100">
+                      <div class="range"></div>
+                    </fieldset>
+                  </fieldset>
+                  <fieldset class="filter__field">
+                                  <button class="filter-head-btn" type="button"><span>Дополнительно</span>
+                                    <svg width="15" height="10">
+                                      <use xlink:href="./assets/sprite.svg#icon-filter-arrow"></use>
+                                    </svg>
+                                  </button>
+                                  <ul class="filter__field-body">
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="sales" checked>
+                                                      <label class="checkbox-label" for="sales">Cо скидкой</label>
+                                                    </div><span class="filter__field-count">1109</span>
+                                    </li>
+                                    <li>
+                                                    <div class="main-checkbox">
+                                                      <input type="checkbox" id="available" checked>
+                                                      <label class="checkbox-label" for="available">В наличии</label>
+                                                    </div><span class="filter__field-count">8096</span>
+                                    </li>
+                                  </ul>
+                  </fieldset>
+                                <button class="filter__btn filter__btn--submit main-btn--blue main-btn" type="button">Показать 896 товаров</button>
+                                <button class="filter__btn filter__btn--reset main-btn--outlined main-btn" type="button">Очистить всё</button>
+                </form>
+              </div>
             </div>
             <div class="catalog__main">
               <div class="catalog__main-header">

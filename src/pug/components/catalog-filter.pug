@@ -1,0 +1,113 @@
+include ../mixins/filter-head-btn
+include ../mixins/main-checkbox
+include ../mixins/filter-field-body
+include ../mixins/filter-field-body-color
+include ../mixins/main-btn
+
+-
+  const categories = [
+    { checkbox: { name: 'clothes', title: 'Одежда' }, rest: '119999' },
+    { checkbox: { name: 'shoes', title: 'Обувь' }, rest: '296' },
+    { checkbox: { name: 'toys', title: 'Игрушки' }, rest: '93' },
+    { checkbox: { name: 'babies', title: 'Товары для малышей' }, rest: '11' },
+  ]
+
+-
+  const sex = [
+    { checkbox: { name: 'boy', title: 'Мужской' }, rest: '1109' },
+    { checkbox: { name: 'girl', title: 'Женский' }, rest: '896' }
+  ]
+
+-
+  const material = [
+    { checkbox: { name: 'synthetics', title: 'Синтетика' }, rest: '1109' },
+    { checkbox: { name: 'cotton', title: 'Хлопок' }, rest: '8096' },
+    { checkbox: { name: 'velour', title: 'Велюр' }, rest: '1896' },
+    { checkbox: { name: 'viscose', title: 'Вискоза' }, rest: '11109' },
+  ]
+
+-
+  const brand = [
+    { checkbox: { name: '1TOY', title: '1TOY' }, rest: '1109' },
+    { checkbox: { name: 'ARKADE', title: 'ARKADE' }, rest: '8096' },
+    { checkbox: { name: 'Arau', title: 'Arau' }, rest: '1896' },
+    { checkbox: { name: 'BT21', title: 'BT21' }, rest: '11109' },
+    { checkbox: { name: 'BabyEinstein', title: 'BabyEinstein' }, rest: '8096' },
+    { checkbox: { name: 'Ben-10', title: 'Ben-10' }, rest: '1896' },
+  ]
+
+-
+  const type = [
+    { checkbox: { name: 'sales', title: 'Cо скидкой' }, rest: '1109' },
+    { checkbox: { name: 'available', title: 'В наличии' }, rest: '8096' },
+  ]
+
+-
+  const colors = [
+    { id:'white-color', aria: 'Белый цвет', img: 'color-checkbox-bg-white' },
+    { id:'lightgray-color', aria: 'Светло-серый цвет', img: 'color-checkbox-bg-lightgray' },
+    { id:'yellow-color', aria: 'Желтый цвет', img: 'color-checkbox-bg-yellow' },
+    { id:'orange-color', aria: 'Орнжевый цвет', img: 'color-checkbox-bg-orange' },
+    { id:'red-color', aria: 'Красный цвет', img: 'color-checkbox-bg-red' },
+    { id:'violet-color', aria: 'Фиолетовый цвет', img: 'color-checkbox-bg-violet' },
+    { id:'darkblue-color', aria: 'Темно-синий цвет', img: 'color-checkbox-bg-darkblue' },
+    { id:'blue-color', aria: 'Голубой цвет', img: 'color-checkbox-bg-blue' },
+    { id:'green-color', aria: 'Зеленый цвет', img: 'color-checkbox-bg-green' },
+    { id:'brown-color', aria: 'Коричневый цвет', img: 'color-checkbox-bg-brown' },
+    { id:'fullgray-color', aria: 'Серый цвет', img: 'color-checkbox-bg-fullgray' },
+    { id:'rainbow-color', aria: 'Радужный цвет', img: 'color-checkbox-bg-rainbow' },
+  ]
+
+.catalog-filter
+  form(action="#").filter
+    fieldset.filter__field
+      +filter-head-btn('Категории товаров')
+      +filter-field-body(categories)
+
+    fieldset.filter__field
+      +filter-head-btn('Пол')
+      +filter-field-body(sex)
+
+    fieldset.filter__field
+      +filter-head-btn('Состав')
+      +filter-field-body(material)
+
+    fieldset.filter__field
+      +filter-head-btn('Бренды')
+      +filter-field-body(brand)
+
+    fieldset.filter__field
+      +filter-head-btn('Цвет')
+      +filter-field-body-color(colors)
+
+    fieldset.filter__field
+      +filter-head-btn('Размер')
+
+      fieldset.filter__field-body.filter__field-body--size
+        select(id="product-size").custom-select
+          option(value="80") 80
+          option(value="84") 84
+          option(value="88") 88
+          option(value="92") 92
+          option(value="96") 96
+          option(value="100") 100
+          option(value="104" selected) 104
+
+        a(href="#") Таблица размеров
+
+    fieldset.filter__field
+      +filter-head-btn('Цена')
+
+      fieldset.filter__field-body.filter__field-body--range
+        input(type="number" placeholder="0" id="priceFrom" min="0" max="500000" step="100")
+        input(type="number" placeholder="50000" min="0" max="50000" id="priceTo" step="100")
+
+        .range
+
+    fieldset.filter__field
+      +filter-head-btn('Дополнительно')
+      +filter-field-body(type)
+
+    +main-btn('button', 'Показать 896 товаров', null, 'filter__btn filter__btn--submit main-btn--blue')
+    +main-btn('button', 'Очистить всё', null, 'filter__btn filter__btn--reset main-btn--outlined')
+

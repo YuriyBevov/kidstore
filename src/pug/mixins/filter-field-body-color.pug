@@ -1,0 +1,7 @@
+mixin filter-field-body-color(data)
+  ul.filter__field-body.filter__field-body--color
+    each item in data
+      li
+        .color-checkbox
+            input(type="checkbox" id= item.id)
+            label(for= item.id aria-label= item.aria style=`background-image: url('./assets/img/${item.img}.png')`)
